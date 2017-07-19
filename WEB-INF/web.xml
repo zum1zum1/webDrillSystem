@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+<!-- ログイン　-->
+	<servlet>
+		<servlet-name>SearchMusicServlet</servlet-name>
+		<servlet-class>servlet.SearchMusicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchMusicServlet</servlet-name>
+		<url-pattern>/jsp/searchMusicServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/jsp/loginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/jsp/logoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- 問題　教師　-->	
+	<servlet>
+		<servlet-name>QuestionListServletTeacher</servlet-name>
+		<servlet-class>servlet.QuestionListServletTeacher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionListServletTeacher</servlet-name>
+		<url-pattern>/jsp/teacher/questionListServletTeacher</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionDetailServlet</servlet-name>
+		<servlet-class>servlet.QuestionDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionDetailServlet</servlet-name>
+		<url-pattern>/jsp/teacher/questionDetailServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionEditServlet</servlet-name>
+		<servlet-class>servlet.QuestionEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionEditServlet</servlet-name>
+		<url-pattern>/jsp/teacher/questionEditServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionUpdateServlet</servlet-name>
+		<servlet-class>servlet.QuestionUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionUpdateServlet</servlet-name>
+		<url-pattern>/jsp/teacher/questionUpdateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionDeleteServlet</servlet-name>
+		<servlet-class>servlet.QuestionDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionDeleteServlet</servlet-name>
+		<url-pattern>/jsp/teacher/questionDeleteServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionCreateServlet</servlet-name>
+		<servlet-class>servlet.QuestionCreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionCreateServlet</servlet-name>
+		<url-pattern>/jsp/teacher/questionCreateServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- 問題　学生　-->
+	<servlet>
+		<servlet-name>QuestionListServletStudent</servlet-name>
+		<servlet-class>servlet.QuestionListServletStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionListServletStudent</servlet-name>
+		<url-pattern>/jsp/students/questionListServletStudent</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QuestionAnswerServlet</servlet-name>
+		<servlet-class>servlet.QuestionAnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionAnswerServlet</servlet-name>
+		<url-pattern>/jsp/students/questionAnswerServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>QuestionAnswerEditServlet</servlet-name>
+		<servlet-class>servlet.QuestionAnswerEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionAnswerEditServlet</servlet-name>
+		<url-pattern>/jsp/students/questionAnswerEditServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HistoryCreateServlet</servlet-name>
+		<servlet-class>servlet.HistoryCreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HistoryCreateServlet</servlet-name>
+		<url-pattern>/jsp/students/historyCreateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HistoryUpdateServlet</servlet-name>
+		<servlet-class>servlet.HistoryUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HistoryUpdateServlet</servlet-name>
+		<url-pattern>/jsp/students/historyUpdateServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+<!--　学生　-->
+	<servlet>
+		<servlet-name>StudentListServlet</servlet-name>
+		<servlet-class>servlet.StudentListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentListServlet</servlet-name>
+		<url-pattern>/jsp/teacher/studentListServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StudentCreateServlet</servlet-name>
+		<servlet-class>servlet.StudentCreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentCreateServlet</servlet-name>
+		<url-pattern>/jsp/teacher/studentCreateServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>StudentDeleteServlet</servlet-name>
+		<servlet-class>servlet.StudentDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentDeleteServlet</servlet-name>
+		<url-pattern>/jsp/teacher/studentDeleteServlet</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>StudentDetailServlet</servlet-name>
+		<servlet-class>servlet.StudentDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentDetailServlet</servlet-name>
+		<url-pattern>/jsp/teacher/studentDetailServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
